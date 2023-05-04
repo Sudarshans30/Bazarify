@@ -3,14 +3,14 @@ import express from 'express';
 import dotenv from 'dotenv';
 import cookieParser from 'cookie-parser';
 dotenv.config();
-import connectDB from './config/db.js';
+import connectDB from './config/connection.js';
 import productRoutes from './routes/product-Routes.js';
 import userRoutes from './routes/user-Routes.js';
 import orderRoutes from './routes/order-Routes.js';
 import imageRoutes from './routes/image-Routes.js';
 import { notFound, errorHandler } from './middleware/errorMiddleware.js';
 
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 5002;
 
 connectDB();
 
