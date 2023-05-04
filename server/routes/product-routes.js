@@ -8,7 +8,7 @@ import {
   deleteProduct,
   createProductReview,
   getTopProducts,
-} from '../controller/product-controller';
+} from '../controller/product-controller.js';
 import { protect, admin } from '../middleware/authMiddleware.js';
 
 router.route('/').get(getProducts).post(protect, admin, createProduct);

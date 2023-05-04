@@ -1,6 +1,6 @@
 import asyncHandler from '../middleware/asyncHandler.js';
-import generateToken from '../utils/generateToken.js';
-import User from '../models/userModel.js';
+import generateToken from '../utils/tokenGenerator.js';
+import User from '../models/user.js';
 
 
 const authUser = asyncHandler(async (req, res) => {
