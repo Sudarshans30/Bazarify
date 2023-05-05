@@ -1,7 +1,7 @@
 const products = [
   {
     name: 'Apple iPhone 13 Pro Max',
-    image: '/images/phone2.jpg',
+    image: '/images/iphone13.webp',
     description:
       'Get the ultimate iPhone experience with the iPhone 13 Pro Max. Featuring 5G, an A15 Bionic chip, Pro camera system, Super Retina XDR display, and up to 1TB of storage.',
     brand: 'Apple',
@@ -13,7 +13,7 @@ const products = [
   },
   {
     name: 'Dell XPS 13 Laptop',
-    image: '/images/laptop1.jpg',
+    image: '/images/laptop1.avif',
     description:
       'The Dell XPS 13 Laptop is the ultimate ultra-portable. Featuring an 11th Gen Intel Core processor, 13.4-inch FHD+ display, and up to 14 hours of battery life.',
     brand: 'Dell',
@@ -25,7 +25,7 @@ const products = [
   },
   {
     name: 'Sony PlayStation 5 Console',
-    image: '/images/console1.jpg',
+    image: '/images/console1.webp',
     description:
       'Experience lightning-fast loading times and haptic feedback with the Sony PlayStation 5 Console. Featuring 4K gaming, HDR, and a DualSense wireless controller.',
     brand: 'Sony',
@@ -37,7 +37,7 @@ const products = [
   },
   {
     name: 'Bose SoundLink Revolve+ Portable Bluetooth Speaker',
-    image: '/images/speaker1.jpg',
+    image: '/images/speaker1.png',
     description:
       'Take your music anywhere with the Bose SoundLink Revolve+ Portable Bluetooth Speaker. Featuring 360-degree sound, water-resistant design, and up to 16 hours of battery life.',
     brand: 'Bose',
@@ -49,7 +49,7 @@ const products = [
   },
   {
     name: 'Samsung 55" QN90A Neo QLED 4K Smart TV',
-    image: '/images/tv1.jpg',
+    image: '/images/tv1.webp',
     description:
       'Experience stunning picture quality with the Samsung 55" QN90A Neo QLED 4K Smart TV. Featuring Quantum HDR 32X, Object Tracking Sound+, and Alexa built-in.',
     brand: 'Samsung',
@@ -61,7 +61,7 @@ const products = [
   },
   {
     name: 'Garmin Forerunner 945 GPS Running Smartwatch',
-    image: '/images/watch1.jpg',
+    image: '/images/watch1.webp',
     description:
       'Track your runs and workouts with the Garmin Forerunner 945 GPS Running Smartwatch. Featuring advanced running dynamics, music storage, and up to 2 weeks of battery life.',
     brand: 'Garmin',
@@ -73,7 +73,7 @@ const products = [
   },
   {
     name: 'Canon EOS R5 Mirrorless Camera',
-    image: '/images/camera2.jpg',
+    image: '/images/camera2.jpeg',
     description:
       'The Canon EOS R5 Mirrorless Camera delivers the ultimate in image quality and performance. With four times the detail of 4K, the Canon EOS R5 captures 12-bit RAW video internally at 8K, or record 4K (4:2:2 10-bit) at frame rates of up to 120p. 8K recording uses the full width of the sensor with no crop at 30p. Subject tracking is also enabled for both human and animals, utilising eye, face and head detect.',
       brand: 'Canon',
@@ -85,7 +85,7 @@ const products = [
   },
   {
     name: 'Apple MacBook Pro',
-    image: '/images/laptop1.jpg',
+    image: '/images/laptop1.avif',
     description:
       'The Apple MacBook Pro features a 13-inch Retina display, 8th-generation Intel Core processor, and up to 10 hours of battery life. Perfect for work and play.',
     brand: 'Apple',
@@ -97,7 +97,7 @@ const products = [
   },
   {
     name: 'Sony Playstation 5',
-    image: '/images/console1.jpg',
+    image: '/images/console1.webp',
     description:
       'Experience the next generation of gaming with the Sony Playstation 5. Featuring lightning-fast load times, haptic feedback, and 3D audio for an immersive gaming experience.',
     brand: 'Sony',
@@ -109,7 +109,7 @@ const products = [
   },
   {
     name: 'Microsoft Xbox Series X',
-    image: '/images/console2.jpg',
+    image: '/images/console2.webp',
     description:
       'Experience the power of the Xbox Series X, featuring 4K gaming, up to 120 frames per second, and backwards compatibility with thousands of Xbox games.',
     brand: 'Microsoft',
@@ -121,7 +121,7 @@ const products = [
   },
   {
     name: 'LG OLED65CXPUA 4K Smart OLED TV',
-    image: '/images/tv1.jpg',
+    image: '/images/tv1.webp',
     description:
       'Experience true-to-life picture quality with the LG OLED65CXPUA 4K Smart OLED TV. Featuring AI ThinQ technology, webOS, and Dolby Vision IQ for a stunning viewing experience.',
     brand: 'LG',
@@ -133,7 +133,7 @@ const products = [
   },
   {
     name: 'Canon EOS R5 Mirrorless Camera',
-    image: '/images/camera2.jpg',
+    image: '/images/camera3.jpeg',
     description:
       'The Canon EOS R5 Mirrorless Camera features a 45MP full-frame CMOS sensor, 8K video, and advanced autofocus for professional-level photography and videography.',
     brand: 'Canon',
@@ -145,7 +145,7 @@ const products = [
   },
   {
     name: 'Beats Solo Pro Wireless Noise Cancelling Headphones',
-    image: '/images/headphones2.jpg',
+    image: '/images/headphones2.webp',
     description:
       'Experience superior sound quality with the Beats Solo Pro Wireless Noise Cancelling Headphones. Featuring active noise cancellation, up to 22 hours of battery life, and hands-free control with Siri.',
     brand: 'Beats',
@@ -157,7 +157,7 @@ const products = [
   },
   {
     name: 'Apple iPad Pro (2021)',
-    image: '/images/ipad1.jpg',
+    image: '/images/ipad1.jpeg',
     description:
       'The latest iPad Pro features a stunning Liquid Retina XDR display, 5G connectivity, and the powerful M1 chip for incredible performance. Perfect for work, creativity, and entertainment.',
     brand: 'Apple',
@@ -169,7 +169,7 @@ const products = [
   },
   {
     name: 'Breville Barista Touch Espresso Maker',
-    image: '/images/espresso1.jpg',
+    image: '/images/espresso1.jpeg',
     description:
       'Create delicious coffee drinks like a professional barista with the Breville Barista Touch Espresso Maker. With its touch screen display and automatic milk frother, making coffee has never been easier.',
     brand: 'Breville',
@@ -181,7 +181,7 @@ const products = [
   },
   {
     name: 'Dyson Supersonic Hair Dryer',
-    image: '/images/hairdryer1.jpg',
+    image: '/images/hairdryer1.jpeg',
     description:
       'Get salon-quality hair at home with the Dyson Supersonic Hair Dryer. Its intelligent heat control prevents damage and frizz, and its powerful motor dries hair quickly and quietly.',
     brand: 'Dyson',
@@ -193,7 +193,7 @@ const products = [
   },
   {
     name: 'LG OLED CX Series 4K Smart TV',
-    image: '/images/tv1.jpg',
+    image: '/images/tv1.webp',
     description:
       'Experience stunning picture quality and immersive sound with the LG OLED CX Series 4K Smart TV. Featuring self-lit pixels, Dolby Vision IQ, and Dolby Atmos for a cinematic viewing experience.',
     brand: 'LG',
@@ -205,7 +205,7 @@ const products = [
   },
   {
     name: 'Fitbit Charge 5 Fitness Tracker',
-    image: '/images/fitbit1.jpg',
+    image: '/images/fitbit1.jpeg',
     description:
       'Track your fitness goals and stay connected with the Fitbit Charge 5 Fitness Tracker. With built-in GPS, heart rate monitoring, and up to 7 days of battery life, you can take your workouts to the next level.',
     brand: 'Fitbit',
@@ -217,7 +217,7 @@ const products = [
   },
   {
     name: 'Microsoft Surface Laptop 4',
-    image: '/images/laptop1.jpg',
+    image: '/images/surface1.webp',
     description:
       'The Microsoft Surface Laptop 4 combines performance, style, and portability. Featuring a 13.5" touchscreen display, AMD Ryzen 5 processor, and up to 19 hours of battery life, its perfect for work and play.',
     brand: 'Microsoft',
@@ -230,7 +230,7 @@ const products = [
 
   {
     name: 'Sony WH-1000XM4 Wireless Noise-Canceling Headphones',
-    image: '/images/headphones2.jpg',
+    image: '/images/headphones3.jpeg',
     description:
       'Enjoy industry-leading noise cancellation and exceptional sound quality with the Sony WH-1000XM4 wireless headphones. Up to 30 hours of battery life.',
     brand: 'Sony',
@@ -242,7 +242,7 @@ const products = [
   },
   {
     name: 'Apple Watch Series 7',
-    image: '/images/watch1.jpg',
+    image: '/images/watch2.jpeg',
     description:
       'Stay connected and monitor your health with the Apple Watch Series 7. Features an always-on retina display, ECG app, and fall detection.',
     brand: 'Apple',
@@ -254,7 +254,7 @@ const products = [
   },
   {
     name: 'ASUS ROG Strix G15 Advantage Edition Gaming Laptop',
-    image: '/images/laptop3.jpg',
+    image: '/images/laptop4.jpeg',
     description:
       'Experience powerful gaming performance with the ASUS ROG Strix G15 Advantage Edition gaming laptop, featuring AMD Ryzen 9 processor and Radeon RX 6800M graphics.',
     brand: 'ASUS',
@@ -264,21 +264,21 @@ const products = [
     rating: 4.7,
     numReviews: 12,
   },
-  {
-    name: 'Cuisinart Classic Stainless Steel Cookware Set',
-    image: '/images/cookware2.jpg',
-    description:
-      'Cook with confidence using the Cuisinart Classic Stainless Steel Cookware Set, featuring cool-grip handles and tight-fitting lids. Includes 14 pieces.',
-    brand: 'Cuisinart',
-    category: 'Kitchen',
-    price: 249.99,
-    countInStock: 6,
-    rating: 4.5,
-    numReviews: 9,
-  },
+  // {
+  //   name: 'Cuisinart Classic Stainless Steel Cookware Set',
+  //   image: '/images/cookware2.jpg',
+  //   description:
+  //     'Cook with confidence using the Cuisinart Classic Stainless Steel Cookware Set, featuring cool-grip handles and tight-fitting lids. Includes 14 pieces.',
+  //   brand: 'Cuisinart',
+  //   category: 'Kitchen',
+  //   price: 249.99,
+  //   countInStock: 6,
+  //   rating: 4.5,
+  //   numReviews: 9,
+  // },
   {
     name: 'Fitbit Versa 3 Smartwatch',
-    image: '/images/watch2.jpg',
+    image: '/images/fitbit1.jpeg',
     description:
       'Track your fitness and stay connected with the Fitbit Versa 3 Smartwatch. Features built-in GPS, voice assistant, and up to 6 days of battery life.',
     brand: 'Fitbit',
@@ -290,7 +290,7 @@ const products = [
   },
   {
     name: 'Lenovo Legion 5 Gaming Desktop',
-    image: '/images/desktop2.jpg',
+    image: '/images/legion1.webp',
     description:
       'Dominate your gaming opponents with the Lenovo Legion 5 gaming desktop, featuring AMD Ryzen 7 processor and NVIDIA GeForce RTX 3060 graphics.',
     brand: 'Lenovo',
