@@ -1,7 +1,7 @@
 const products = [
   {
     name: 'Apple iPhone 13 Pro Max',
-    image: '/images/iphone13.webp',
+    image: '/images/iphone2.jpeg',
     description:
       'Get the ultimate iPhone experience with the iPhone 13 Pro Max. Featuring 5G, an A15 Bionic chip, Pro camera system, Super Retina XDR display, and up to 1TB of storage.',
     brand: 'Apple',
