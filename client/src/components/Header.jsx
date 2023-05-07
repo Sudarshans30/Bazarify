@@ -6,7 +6,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 import Search from './Search'
 import { useLogoutMutation } from '../slices/usersApiSlice';
 import { logout } from '../slices/authSlice';
-import logo from '../assets/logo.png';
+import logo1 from '../assets/logo1.png';
 import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 
@@ -35,7 +35,7 @@ const Header = () => {
         <Container>
           <LinkContainer to='/'>
             <Navbar.Brand>
-              <img src={logo} alt='Bazaarify' style={{ height: '50px', width: '50px' }} /> Bazaarify
+              <img src={logo1} alt='Bazaarify' style={{ height: '50px', width: '50px' }} /> Bazaarify
             </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />

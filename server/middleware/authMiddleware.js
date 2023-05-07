@@ -1,7 +1,9 @@
 import jwt from 'jsonwebtoken';
+import asyncHandler from './asyncHandler.js';
 import User from '../models/user.js';
 
-const authentication = async (req, res, next) => {
+// User must be authenticated
+const protect = asyncHandler(async (req, res, next) => {
   let token;
 
   // Read JWT from the 'jwt' cookie
@@ -23,8 +25,9 @@ const authentication = async (req, res, next) => {
     res.status(401);
     throw new Error('Not authorized, no token');
   }
-};
+});
 
+// User must be an admin
 const admin = (req, res, next) => {
   if (req.user && req.user.isAdmin) {
     next();
@@ -34,4 +37,4 @@ const admin = (req, res, next) => {
   }
 };
 
-export { authentication, admin };
+export { protect, admin };

@@ -10,22 +10,22 @@ import {
   getUserById,
   updateUser
 } from '../controller/user-controller.js';
-import { authentication, admin } from '../middleware/authMiddleware.js';
+import { protect, admin } from '../middleware/authMiddleware.js';
 
 const router = express.Router();
 
-router.route('/').post(registerUser).get(authentication, admin, getUsers);
+router.route('/').post(registerUser).get(protect, admin, getUsers);
 router.post('/auth', authUser);
 router.post('/logout', logoutUser);
 router
   .route('/profile')
-  .get(authentication, getUserProfile)
-  .put(authentication, updateUserProfile);
+  .get(protect, getUserProfile)
+  .put(protect, updateUserProfile);
 router
   .route('/:id')
-  .delete(authentication, admin, deleteUser)
-  .get(authentication, admin, getUserById)
-  .put(authentication, admin, updateUser);
+  .delete(protect, admin, deleteUser)
+  .get(protect, admin, getUserById)
+  .put(protect, admin, updateUser);
 
 export default router;
 
