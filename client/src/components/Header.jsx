@@ -35,7 +35,7 @@ const Header = () => {
         <Container>
           <LinkContainer to='/'>
             <Navbar.Brand>
-              <img src={logo} alt='Bazaarify' /> Bazaarify
+              <img src={logo} alt='Bazaarify' style={{ height: '50px', width: '50px' }} /> Bazaarify
             </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
