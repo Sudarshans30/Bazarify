@@ -33,8 +33,7 @@ const PlaceOrderScreen = () => {
         paymentMethod: cart.paymentMethod,
         itemsPrice: cart.itemsPrice,
         shippingPrice: cart.shippingPrice,
-        taxPrice: cart.taxPrice,
-        totalPrice: cart.totalPrice,
+        
       }).unwrap();
       dispatch(clearCartItems());
       navigate(`/order/${res._id}`);
@@ -120,7 +119,7 @@ const PlaceOrderScreen = () => {
                 <Row>
                   <Col>Tax</Col>
                   <Col>${cart.taxPrice}</Col>
-                </Row>
+                </Row> 
               </ListGroup.Item>
               <ListGroup.Item>
                 <Row>
@@ -151,3 +150,6 @@ const PlaceOrderScreen = () => {
 };
 
 export default PlaceOrderScreen;
+
+
+
