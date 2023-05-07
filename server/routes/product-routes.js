@@ -9,15 +9,16 @@ import {
   createProductReview,
   getTopProducts,
 } from '../controller/product-controller.js';
-import { protect, admin } from '../middleware/authMiddleware.js';
 
-router.route('/').get(getProducts).post(protect, admin, createProduct);
-router.route('/:id/reviews').post(protect, createProductReview);
+import { authentication, admin } from '../middleware/authMiddleware.js';
+
+router.route('/').get(getProducts).post(authentication, admin, createProduct);
+router.route('/:id/reviews').post(authentication, createProductReview);
 router.get('/top', getTopProducts);
 router
   .route('/:id')
   .get(getProductById)
-  .put(protect, admin, updateProduct)
-  .delete(protect, admin, deleteProduct);
+  .put(authentication, admin, updateProduct)
+  .delete(authentication, admin, deleteProduct);
 
 export default router;
