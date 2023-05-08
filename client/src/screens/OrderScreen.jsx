@@ -199,12 +199,7 @@ const OrderScreen = () => {
                   <Col>${order.shippingPrice}</Col>
                 </Row>
               </ListGroup.Item>
-              <ListGroup.Item>
-                <Row>
-                  <Col>Tax</Col>
-                  <Col>${order.taxPrice}</Col>
-                </Row>
-              </ListGroup.Item>
+              
               <ListGroup.Item>
                 <Row>
                   <Col>Total</Col>
