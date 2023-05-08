@@ -49,7 +49,7 @@ const Search = () => {
 
   const submitHandler = (e) => {
     e.preventDefault();
-    const trimmedKeyword = keyword.trim();
+    const trimmedKeyword = keyword?.trim();
     if (trimmedKeyword) {
       navigate(`/search/${trimmedKeyword}`);
       setKeyword('');
