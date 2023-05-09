@@ -8,7 +8,6 @@ Bazaarify is a powerful and customizable multi-vendor ecommerce platform that al
 
 * [Installation](#installation)
 * [Technologies Used](#technologies-used)
-* [Contributing](#contributing)
 * [Screenshots](#Screenshots) 
 * [Links](#links)
 * [License](#license)
@@ -27,9 +26,7 @@ Bazaarify is a powerful and customizable multi-vendor ecommerce platform that al
 - React- used for front-end.
 - Redux- used for state management
 - Vs Code- used to write code
-
-## Contributing
-
+- JWT - for authentification
 
 
 
