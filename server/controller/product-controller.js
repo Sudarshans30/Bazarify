@@ -1,4 +1,4 @@
-import Product from '../models/product.js';
+import Product from "../models/product.js";
 
 const getProducts = async (req, res) => {
   try {
@@ -9,7 +9,7 @@ const getProducts = async (req, res) => {
       ? {
           name: {
             $regex: req.query.keyword,
-            $options: 'i',
+            $options: "i",
           },
         }
       : {};
@@ -21,7 +21,7 @@ const getProducts = async (req, res) => {
 
     res.json({ products, page, pages: Math.ceil(count / pageSize) });
   } catch (error) {
-    res.status(500).json({ message: 'Server Error' });
+    res.status(500).json({ message: "Server Error" });
   }
 };
 
@@ -32,36 +32,37 @@ const getProductById = async (req, res) => {
       return res.json(product);
     }
     res.status(404);
-    throw new Error('Resource not found');
+    throw new Error("Resource not found");
   } catch (error) {
-    res.status(500).json({ message: 'Server Error' });
+    res.status(500).json({ message: "Server Error" });
   }
 };
 
 const createProduct = async (req, res) => {
   try {
     const product = new Product({
-      name: 'Sample name',
+      name: "Sample name",
       price: 0,
       user: req.user._id,
-      image: '/images/sample.jpg',
-      brand: 'Sample brand',
-      category: 'Sample category',
+      image: "/images/sample.jpg",
+      brand: "Sample brand",
+      category: "Sample category",
       countInStock: 0,
       numReviews: 0,
-      description: 'Sample description',
+      description: "Sample description",
     });
 
     const createdProduct = await product.save();
     res.status(201).json(createdProduct);
   } catch (error) {
-    res.status(500).json({ message: 'Server Error' });
+    res.status(500).json({ message: "Server Error" });
   }
 };
 
 const updateProduct = async (req, res) => {
   try {
-    const { name, price, description, image, brand, category, countInStock } = req.body;
+    const { name, price, description, image, brand, category, countInStock } =
+      req.body;
 
     const product = await Product.findById(req.params.id);
 
@@ -78,10 +79,10 @@ const updateProduct = async (req, res) => {
       res.json(updatedProduct);
     } else {
       res.status(404);
-      throw new Error('Product not found');
+      throw new Error("Product not found");
     }
   } catch (error) {
-    res.status(500).json({ message: 'Server Error' });
+    res.status(500).json({ message: "Server Error" });
   }
 };
 
@@ -91,16 +92,15 @@ const deleteProduct = async (req, res) => {
 
     if (product) {
       await product.remove();
-      res.json({ message: 'Product removed' });
+      res.json({ message: "Product removed" });
     } else {
       res.status(404);
-      throw new Error('Product not found');
+      throw new Error("Product not found");
     }
   } catch (error) {
-    res.status(500).json({ message: 'Server Error' });
+    res.status(500).json({ message: "Server Error" });
   }
 };
-
 
 const createProductReview = async (req, res) => {
   try {
@@ -110,7 +110,7 @@ const createProductReview = async (req, res) => {
 
     if (!product) {
       res.status(404);
-      throw new Error('Product not found');
+      throw new Error("Product not found");
     }
 
     const alreadyReviewed = product.reviews.find(
@@ -119,7 +119,7 @@ const createProductReview = async (req, res) => {
 
     if (alreadyReviewed) {
       res.status(400);
-      throw new Error('Product already reviewed');
+      throw new Error("Product already reviewed");
     }
 
     const review = {
@@ -138,7 +138,7 @@ const createProductReview = async (req, res) => {
       product.reviews.length;
 
     await product.save();
-    res.status(201).json({ message: 'Review added' });
+    res.status(201).json({ message: "Review added" });
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
@@ -152,7 +152,6 @@ const getTopProducts = async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 };
-
 
 export {
   getProducts,

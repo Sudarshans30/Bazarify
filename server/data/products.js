@@ -264,18 +264,7 @@ const products = [
     rating: 4.7,
     numReviews: 12,
   },
-  // {
-  //   name: 'Cuisinart Classic Stainless Steel Cookware Set',
-  //   image: '/images/cookware2.jpg',
-  //   description:
-  //     'Cook with confidence using the Cuisinart Classic Stainless Steel Cookware Set, featuring cool-grip handles and tight-fitting lids. Includes 14 pieces.',
-  //   brand: 'Cuisinart',
-  //   category: 'Kitchen',
-  //   price: 249.99,
-  //   countInStock: 6,
-  //   rating: 4.5,
-  //   numReviews: 9,
-  // },
+  
   {
     name: 'Fitbit Versa 3 Smartwatch',
     image: '/images/fitbit1.jpeg',
