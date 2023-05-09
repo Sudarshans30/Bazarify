@@ -17,17 +17,11 @@ main {
 }
 
 .product-title {
-  height: 2.5em; 
-  overflow: hidden; 
-  text-overflow: ellipsis; 
-  white-space: nowrap; 
+  height: 2.5em; /* Set a fixed height */
+  overflow: hidden; /* Hide overflow content */
+  text-overflow: ellipsis; /* Add ellipsis for long text */
+  white-space: nowrap; /* Prevent wrapping */
 }
-
-.product-title:hover {
-  color: #0c0b04; 
-  cursor: pointer; 
-}
-
 
 table td,
 table th {

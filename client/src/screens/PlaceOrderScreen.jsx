@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 import { Button, Row, Col, ListGroup, Image, Card } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import Message from '../components/Message';
-import Checkout from '../components/Checkout';
+import CheckoutSteps from '../components/CheckoutSteps';
 import Loader from '../components/Loader';
 import { useCreateOrderMutation } from '../slices/ordersApiSlice';
 import { clearCartItems } from '../slices/cartSlice';
@@ -33,7 +33,8 @@ const PlaceOrderScreen = () => {
         paymentMethod: cart.paymentMethod,
         itemsPrice: cart.itemsPrice,
         shippingPrice: cart.shippingPrice,
-        
+        taxPrice: cart.taxPrice,
+        totalPrice: cart.totalPrice,
       }).unwrap();
       dispatch(clearCartItems());
       navigate(`/order/${res._id}`);
@@ -44,7 +45,7 @@ const PlaceOrderScreen = () => {
 
   return (
     <>
-      <Checkout step1 step2 step3 step4 />
+      <CheckoutSteps step1 step2 step3 step4 />
       <Row>
         <Col md={8}>
           <ListGroup variant='flush'>
@@ -115,7 +116,12 @@ const PlaceOrderScreen = () => {
                   <Col>${cart.shippingPrice}</Col>
                 </Row>
               </ListGroup.Item>
-           
+              <ListGroup.Item>
+                <Row>
+                  <Col>Tax</Col>
+                  <Col>${cart.taxPrice}</Col>
+                </Row>
+              </ListGroup.Item>
               <ListGroup.Item>
                 <Row>
                   <Col>Total</Col>
@@ -145,6 +151,3 @@ const PlaceOrderScreen = () => {
 };
 
 export default PlaceOrderScreen;
-
-
-
