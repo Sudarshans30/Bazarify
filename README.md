@@ -57,6 +57,9 @@ Bazaarify is a powerful and customizable multi-vendor ecommerce platform that al
 https://bzfiyapp.herokuapp.com/
 ### Repositories
 https://github.com/Sudarshans30/Bazarify
+### Elevator Pitch
+](https://docs.google.com/presentation/d/1K5PLiMLQsd1qzdlQ7Ml4QZo2pSU2EU8UZZNlyQ3mu0s/edit#slide=id.g24161f4e140_0_415)
+
 
 ## License
  ![License Badge](https://img.shields.io/badge/license-MIT-green.svg)
