@@ -22,7 +22,7 @@ node_modules
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-frontend/build
+client/build
 uploads/*png
 uploads/*jpg
 node_modules
