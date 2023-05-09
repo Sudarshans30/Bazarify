@@ -10,7 +10,7 @@ Bazaarify is a powerful and customizable multi-vendor ecommerce platform that al
 * [Technologies Used](#technologies-used)
 * [Contributing](#contributing)
 * [License](#license)
-* [Demo](#demo) 
+* [Screenshots](#Screenshots) 
 * [Links](#links)
 
  ## Installation
@@ -35,7 +35,7 @@ Bazaarify is a powerful and customizable multi-vendor ecommerce platform that al
 ## License
  ![License Badge](https://img.shields.io/badge/license-MIT-green.svg)
 
-## Demo
+## Screenshots
 
 <p >
     <img src="./client/src/assets/Demo-home-page.png">
