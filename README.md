@@ -11,6 +11,7 @@ Bazaarify is a powerful and customizable multi-vendor ecommerce platform that al
 * [Contributing](#contributing)
 * [License](#license)
 * [Demo](#demo) 
+* [Links](#links)
 
  ## Installation
 
@@ -37,6 +38,23 @@ Bazaarify is a powerful and customizable multi-vendor ecommerce platform that al
 ## Demo
 
 <p >
-    <img src="./assets/demo.png">
+    <img src="./client/src/assets/Demo-home-page.png">
+</p>
+<p >
+    <img src="./client/src/assets/cart1.png">
+</p>
+<p >
+    <img src="./client/src/assets/order.png">
+</p>
+<p >
+    <img src="./client/src/assets/shipping.png">
+</p>
+<p >
+    <img src="./client/src/assets/shopping.png">
 </p>
 
+## links
+### deployed link
+https://bzfiyapp.herokuapp.com/
+### Repositories
+https://github.com/Sudarshans30/Bazarify
